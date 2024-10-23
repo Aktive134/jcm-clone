@@ -1,0 +1,2 @@
+DATABASE_URL=mongo_connection_url/your_database_name
+PORT= 6500
