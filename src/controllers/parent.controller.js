@@ -1,9 +1,7 @@
 const Parent = require('../models/parent.model')
 const Child = require('../models/child.model')
 const Caregiver = require('../models/caregiver.model')
-const { deleteUploadedFiles } = require('../middlewares/validate-form')
-const fs = require('fs')
-const path = require('path')
+const deleteUploadedFiles  = require('../utils/utils')
 
 exports.registerParent = async (req, res) => {
   try {

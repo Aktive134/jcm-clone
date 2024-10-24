@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const parentController = require('../controllers/parent.controller');
 const upload = require('../middlewares/upload-file');
-const { validateFormSubmission } = require('../middlewares/validate-form');
+const validateFormSubmission  = require('../middlewares/validate-form');
 
 router.post('/register', upload.fields([
   { name: 'picture_of_parent', maxCount: 1 },
